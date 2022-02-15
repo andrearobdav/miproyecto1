@@ -4,21 +4,22 @@ import imagen3 from './img/img-3-luigi.png';
 import './App.css';
 
 function App() {
+  let nombres=["Mario" , "Yoshi" , "Luigi"];
   return (
     <div className="contenedor">
       <div className="caja">
         <img src={imagen1}/>
-        <div className="texto">Mario Bros</div>
+        <div className="texto">{nombres[0]}</div>
       </div>
 
       <div className="caja">
         <img src={imagen2}/>
-        <div className="texto">Yoshi</div>
+        <div className="texto">{nombres[1]}</div>
       </div>
 
       <div className="caja">
         <img src={imagen3}/>
-        <div className="texto">Luigi</div>
+        <div className="texto">{nombres[2]}</div>
       </div>
     </div>
   );
